@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login/Sign-Up</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container login -container">
+                <form action="login.php" method="post">
+                    <h2>Login</h2>
+                    <input type="text" name="username" placeholder="username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit" href="shop_afrik.html">Login</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel oveerlay-left">
+                        <h2>Welcome Back!</h2>
+                        <p>Already have an account? Login here:</p>
+                        <button class="ghost" id="signIn">Login</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h2>Hello, Freind!</h2>
+                        <p>Don't have an account? Sign-Up here</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7b8b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    background-color: #f8c1c1;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-container {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 10px;
+    background-color: #cc0505;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transition: transform 1.5s ease-in-out;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: relative;
+    background: #007BFF;
+    width: 200%;
+    height: 100%;
+    left: 0;
+    transition: transform 1.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay-left {
+    transform: translateX(-100%);
+}
+
+.overlay-right {
+    right: 0;
+}
+
+.overlay-panel p {
+    font-weight: bold;
+}
+
+.ghost {
+    background: transparent;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+}
+</style>
+<script>
+const signUpButton =
+document.getElementById('signUp');
+const signInButton =
+document.getElementById('signIn');
+const container =
+document.querySelector(".container");
+
+signUpButton.addEventListener('click', () => {
+    container.classList.add('right_panel_active')
+})
+
+signInButton.addEventListener('click', ()  => {
+    container.classList.remove('right-panel-active')
+})
+</script>

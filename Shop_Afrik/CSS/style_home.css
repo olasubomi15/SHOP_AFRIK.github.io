@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(230, 199, 154);
+    background-size: cover;
+}
+button1 {
+          font-size: 19px;
+                  border: none;
+                  cursor: pointer;
+}
+button1 a {
+                font-family: 'Franklin Gothic Medium', Franklin Gothic Medium ;
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+}
+button2 {
+          width: 70px;
+                  height: 40px;
+                  display: flex;
+          align-items: center;
+                  justify-content: center;
+                  font-size: 19px;
+                  background-color: rgb(202, 6, 6);
+                  border: none;
+                  cursor: pointer;
+}
+button2 a {
+                font-family: 'Franklin Gothic Medium', Franklin Gothic Medium ;
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+}
+h {
+  font-weight: bold;
+      line-height: 1.3;
+  font-size: 90px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+        line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p {
+        font-size: 2rem;
+        line-height: 1.5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  }
+button {
+              width: 180px;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 19px;
+              background-color: rgb(202, 6, 6);
+              border: none;
+              cursor: pointer;
+              transition: transform 150ms,
+            font-size 150ms, color 150ms;
+            font-family: 'Franklin Gothic Medium', Franklin Gothic Medium ;
+    }
+button a {
+                font-family: 'Franklin Gothic Medium', Franklin Gothic Medium ;
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+}
+
+    button:active {
+                      background-color: rgb(0, 0, 0);
+                      font-size: 12px;
+                      transform: scale(1.3);	
+                      box-shadow: 5px 5px 10px rgb(230, 7, 7);
+    }
+p2 {
+        font-size: 1.1rem;
+    font-weight: bold;
+        line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+img {
+  margin: 10px;
+}
